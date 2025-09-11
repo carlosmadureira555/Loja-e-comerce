@@ -1,52 +1,117 @@
- 
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
   <title>Minha Loja</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background: url("Instagram post minimalista preto branco sobre estilo lojas de roupa .png") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+    }
+
+    nav a {
+      color: yellow;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    header {
+      padding: 50px 20px;
+    }
+
+    section#catalogo {
+      background-color: rgba(0,0,0,0.7);
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid white;
+    }
+
+    th {
+      background-color: black;
+      color: yellow;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: yellow;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: orange;
+    }
+  </style>
 </head>
-<body background="Instagram post minimalista preto branco sobre estilo lojas de roupa .png" 
-      style="margin:0; font-family: Arial, sans-serif; color: white; text-align: center;">
+<body>
+  <!-- Menu -->
+  <nav>
+    <a href="#catalogo">Ver Catálogo</a>
+  </nav>
 
-  <h1>Bem-vindo à Minha Loja Online</h1>
-  <p>Aqui você encontra os melhores produtos!</p>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Bem-vindo à Minha Loja Online</h1>
+    <p>Aqui você encontra os melhores produtos!</p>
+  </header>
 
-  <a href="#catalogo" style="color: yellow; font-weight: bold;">Ver Catálogo</a>
-
-  <hr style="margin:40px; border: 1px solid white;">
- 
-  <h2 id="catalogo">Catálogo</h2>
-
-  <table border="1" cellspacing="0" cellpadding="10" align="center" style="background-color: rgba(0,0,0,0.7);">
-    <tr style="background-color: black; color: yellow;">
-      <th>Imagem</th>
-      <th>Produto</th>
-      <th>Descrição</th>
-      <th>Preço</th>
-      <th>Ação</th>
-    </tr>
-
-    <tr>
-      <td><img src="camiseta.png" width="120"></td>
-      <td>Camiseta</td>
-      <td>100% algodão</td>
-      <td>R$ 59,90</td>
-      <td><button style="padding:10px; background:yellow; border:none; cursor:pointer;">Comprar</button></td>
-    </tr>
-
-    <tr>
-      <td><img src="calca.png" width="120"></td>
-      <td>Calça Jeans</td>
-      <td>Modelagem slim</td>
-      <td>R$ 119,90</td>
-      <td><button style="padding:10px; background:yellow; border:none; cursor:pointer;">Comprar</button></td>
-    </tr>
-
-    <tr>
-      <td><img src="tenis.png" width="120"></td>
-      <td>Tênis</td>
-      <td>Esportivo e confortável</td>
-      <td>R$ 199,90</td>
-      <td><button style="padding:10px; background:yellow; border:none; cursor:pointer;">Comprar</button></td>
-    </tr>
-  </table>
-
+  <!-- Catálogo -->
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <table>
+      <tr>
+        <th>Imagem</th>
+        <th>Produto</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+        <th>Ação</th>
+      </tr>
+      <tr>
+        <td><img src="camiseta.png" width="120"></td>
+        <td>Camiseta</td>
+        <td>100% algodão</td>
+        <td>R$ 59,90</td>
+        <td><button>Comprar</button></td>
+      </tr>
+      <tr>
+        <td><img src="calca.png" width="120"></td>
+        <td>Calça Jeans</td>
+        <td>Modelagem slim</td>
+        <td>R$ 119,90</td>
+        <td><button>Comprar</button></td>
+      </tr>
+      <tr>
+        <td><img src="tenis.png" width="120"></td>
+        <td>Tênis</td>
+        <td>Esportivo e confortável</td>
+        <td>R$ 199,90</td>
+        <td><button>Comprar</button></td>
+      </tr>
+    </table>
+  </section>
 </body>
 </html>
 
